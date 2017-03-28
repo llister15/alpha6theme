@@ -1,0 +1,101 @@
+<footer class="my-foot {% if template == "collection" %}remove-margin {% endif %}">
+      <div class="container-fluid">
+       
+        <div class="row-fluid">
+          
+           <div class="col-md-6 text-center">
+             <h2>Subscribe to our newsletter</h2>
+             	<div class="col-xs-12 col-md-8 col-md-offset-2">
+				{% form 'customer' %}
+             	<div class="input-group">
+                <input id="contact_email" class="form-control" placeholder="Enter your email here ..." name="contact[email]" type="text" />
+                  <div class="input-group-btn">
+              	<button class="btn btn-default submit" type="submit" value="Subscribe">Subscribe</button>
+                  </div>
+                  </div>
+               {% endform %}
+             </div>
+                  
+             
+          </div> 
+          <div class="col-md-6 text-center">
+            <div class="right-social">
+            <h2>CONNECT WITH ALPHA 6</h2>
+              <ul>
+                <li><a href="https://www.facebook.com/ALPHASIXTACTICAL/" target="_blank"><i class="fa fa-facebook set2"></i></a></li>
+                <li><a href="https://www.instagram.com/alpha6tactical/" target="_blank"><i class="fa fa-instagram set2"></i></a></li>
+              </ul>
+            </div>
+          </div> 
+          </div>
+         <div class="row">
+           <div class="col-xs-12">
+          <p class="footer-slogan">PROUD TO BE AN AMERICAN COMPANY</p>
+           </div>
+        </div>
+          <div class="row height-280">
+            <div class="col-md-4 link-color">
+              <div class="footer-heading">
+                <h4>CUSTOMER SERVICES</h4>
+                </div>
+                <a href="tel:18559257426"><h5>CALL 855-9ALPHA6</h5></a>
+<!--                 <p><a href="#">Size Charts</a></p>
+                <p><a href="#">Warranty</a></p> -->
+                <p><a href="https://goo.gl/flWZMu" target="_blank">Alpha Locations</a></p>
+<!--                 <p><a href="/blogs/news">Blog</a></p> -->
+                <p><a href="/pages/contact">Contact</a></p>
+              
+            </div>
+            <div class="col-md-4">
+              <div class="footer-heading">
+                <h4>COMPANY INFO</h4>
+                </div>
+              <div class="row link-color">
+                <div class="col-xs-1 text-center"><a href="https://goo.gl/maps/64bp7NekhDP2" target="_blank"><i class="glyphicon glyphicon-map-marker"></i></a></div>
+              	<div class="col-xs-10 col-md-5"><a href="https://goo.gl/flWZMu
+                  " target="_blank">1571 South Sunkist Street <br/>Anaheim, CA 92806</a></div>
+              </div>
+              <div class="row link-color">
+                <a href="tel:18559257426"><div class="col-xs-1 text-center"><i class="glyphicon glyphicon-phone"></i></div>
+              	<div class="col-xs-10 col-md-5">(855) 925-7426</div></a>
+              </div>
+              <div class="row link-color">
+                <a href="/pages/contact"><div class="col-xs-1 text-center"><i class="glyphicon glyphicon-envelope"></i></div>
+              	<div class="col-xs-10 col-md-5">info@alpha6tactical.com</div></a>
+              </div>
+            </div>
+            <div class="col-md-4 text-center">
+              <div class="footer-heading">
+                <h4>ARE YOU A PATRIOT?</h4>
+                </div>
+            <a href="https://alpha6tactical.com/pages/dealer">
+               <img src="{{ "alpha6white-webfooter_201px.png" | asset_url }}">
+              </a>
+               <p class="text-color">Learn more how to become dealer in your area</p>
+               <a href="https://alpha6tactical.com/pages/dealer">
+				<button type="button" class="custom-action">Learn More</button>
+              </a>
+              
+            </div>
+        </div>
+  	<div class="row">
+           <div class="col-xs-12 copy-right">
+             Copyright &copy; 2017 Alpha 6 Tactical, Inc | Website supported by <a class="link-color" href="http://wonkasoft.com" target="_blank">Wonkasoft</a>
+           </div>
+      </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+   
+{{ 'bootstrap.min.js' | asset_url | script_tag  }}
+    <script type="text/javascript">
+      $('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+    </script>

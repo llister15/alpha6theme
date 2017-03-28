@@ -1,0 +1,64 @@
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+<section class="top-text">
+    <div class="container">
+      <div class="row">
+        <div class="main-top-text">
+          <h4>Serious Outdoors People Need Some Serious Gear Spend $100 And Get Free Shipping!</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    <section class="shop-page-product">
+      <div class="container">
+        <div class="row">
+          <h2>Camping</h2>
+          {% paginate collection.products by 20 %}
+           {% for product in collection.products %}
+          <div class="col-md-3 my-padding">
+            <a href="{{ product.url }}">
+            <div class="main-shop">
+            <img src="{% for image in product.images %}{{ image | img_url: "medium" }}{% endfor %}">
+            <div id="hoverover">
+            <img src="{{ "hover.gif" | asset_url }}">
+            </div>
+            </div>
+            </a>
+            <a href="{{ product.url }}">
+            <div class="shop-detail">
+              <h4>{{ product.title }}</h4>
+              <p>{{ product.price | money }}</p>
+              <form method="post" action="/cart/add"> <input type="hidden" name="id" value="{{ product.variants.first.id }}" /> <input type="submit" value="Buy now" class="btn" /> </form>
+            </div>
+            </a>
+          </div>
+          {% endfor %}
+          <div class="mypagination">
+                {{ paginate | default_pagination }}
+              </div>
+          {% endpaginate %}
+
+         
+
+
+
+
+          
+
+
+        </div>
+      </div>
+    </section>

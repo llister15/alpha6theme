@@ -1,0 +1,78 @@
+<header>
+  <div class="email-top-text">
+    <div class="container">
+      <div class="row">
+        <div class="email-text">
+  <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="top-title">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="title-list">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="tel:18559257426">NEED HELP CALL 855-9ALPHA6</a></li>
+            <li><a href="/pages/law-enforcement">LAW ENFORCEMENT</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><form method="get" action="/search" role="search">
+              <div class="input-group">
+                <input type="search" id="SearchInput" class="form-control search-box" name="q" value="" placeholder="Search" aria-label="Search">
+                <div class="input-group-btn">
+                   <i class="glyphicon glyphicon-search search-icon"></i>
+                  <input type="submit" style="display:none" />
+                </div>
+              </div>
+              </form>
+             
+              </li>
+            <li><a href="/account"><i class="glyphicon glyphicon-user"></i>&nbsp;LOGIN/REGISTER</a></li>
+            <li>
+
+              <a href="/cart"><i class="glyphicon glyphicon-shopping-cart"></i>{% if cart.item_count > -1 %}<span id="CartCount">&nbsp;CART({{ cart.item_count }})</span>{% endif %}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-3 text-center">
+          <div class="top-form-left-text">
+            <a href="https://alpha6tactical.myshopify.com"> <img class="header-logo" src="{{ "alpha6white-weblogo_150px.png" | asset_url }}"></a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-9 text-center">
+          <h2 id="motto">
+            Alpha 6 Tactical, Inc was created with one idea in mind, to be the very best tactical gear company in the marketplace.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+<a href="#menu" class="menu-link active"><span></span></a>
+<div>	
+<nav id="menu" class="menu">
+		<ul class="level-1">
+          	<li><a href="/collections/accessories">ACCESSORIES</a></li>
+        	<li><a href="/collections/apparel">APPAREL</a></li>
+        	<li><a href="/collections/bags">BAGS & PACKS</a></li>
+          	<li><a href="/collections/balistic-armor-carriers">BALLISTIC ARMOR & CARRIERS</a></li>
+        	<li><a href="/collections/riot-gear">POLICE RIOT GEAR</a></li>
+        	<li><a href="/pages/finance-program">FINANCE PROGRAM</a></li>
+          	<li class="cta-nav"><a href="/collections/the-top-15-selling-items">WEB SPECIALS</a></li>
+		</ul>
+	</nav>
+</div>
+
+  
+</header>

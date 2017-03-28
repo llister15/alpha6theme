@@ -1,0 +1,33 @@
+<ul class="list--inline pagination">
+  <li>
+    {% if paginate.previous.is_link %}
+    	<a href="{{ paginate.previous.url }}" class="btn btn--secondary btn--narrow">
+        {% include 'icon-arrow-left' %}
+        <span class="icon__fallback-text">{{ 'general.pagination.previous' | t }}</span>
+      </a>
+    {% else %}
+      <a href="{{ paginate.previous.url }}" class="btn btn--secondary btn--narrow disabled">
+        {% include 'icon-arrow-left' %}
+        <span class="icon__fallback-text">{{ 'general.pagination.previous' | t }}</span>
+      </a>
+    {% endif %}
+  </li>
+  <li class="pagination__text">
+    <span>
+    {{ 'general.pagination.current_page' | t: current: paginate.current_page, total: paginate.pages }}
+    </span>
+  </li>
+  <li>
+    {% if paginate.next.is_link %}
+    	<a href="{{ paginate.next.url }}" class="btn btn--secondary btn--narrow">
+        {% include 'icon-arrow-right' %}
+        <span class="icon__fallback-text">{{ 'general.pagination.next' | t }}</span>
+      </a>
+    {% else %}
+      <a href="{{ paginate.next.url }}" class="btn btn--secondary btn--narrow disabled">
+        {% include 'icon-arrow-right' %}
+        <span class="icon__fallback-text">{{ 'general.pagination.next' | t }}</span>
+      </a>
+    {% endif %}
+  </li>
+</ul>

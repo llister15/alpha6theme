@@ -1,0 +1,378 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+.custom-action,
+.add-cart,
+.link-color,
+.link-color a,
+a,
+.check-out-btn,
+.cart-btn,
+.pagination>li>a,
+.pagination>li>span,
+ul li.pagination__text span,
+.search-icon,
+.height-280 > div,
+.submit,
+.return-link,
+#mc_embed_signup input#mc-embedded-subscribe,
+#contact_form input, 
+#contact_form textarea {
+	transition: all .3s ease-in-out;  
+}
+
+body, html {
+	height: 100%;
+  	background-color: transparent;
+}
+
+body {
+	background: radial-gradient(ellipse, rgba(255,255,255,.2) 0%, rgba(255,255,255,0) 100%)fixed, url(https://cdn.shopify.com/s/files/1/1745/1685/t/2/assets/main-bg7.png);
+  	color: #e2aa00;
+}
+
+h1 {
+	color: #ffffff;
+  	font-size: 16pt;
+}
+
+#motto {
+	font-size: 12pt;
+}
+
+p {
+ 	color: #ffffff; 
+}
+
+.font-size-12 {
+	font-size: 12pt;
+}
+
+.top-bottom-padding {
+	padding-top: 25px;
+  	padding-bottom: 25px;
+}
+
+.header-logo {
+	max-width: 35%;
+}
+
+#mc_embed_signup {
+	background: transparent;
+}
+
+section.about > div > div > div {
+  height: 510px; 
+}
+
+.my-foot > .container-fluid {
+	background: -webkit-linear-gradient(-243deg, #2f2f2f 55%, #1d1d1d 55%);
+  	background: linear-gradient(-243deg, #2f2f2f 55%, #1d1d1d 55%);
+}
+
+#contact_email {
+ 	border-radius: 4px 0 0 4px;
+  	border-right-width: 0;
+}
+
+#mc_embed_signup > form .mc-field-group {
+	padding: 5px 0;
+}
+
+#mc_embed_signup > form input {
+	color:#ffffff;
+  	background-color: transparent;
+  	width: 100%;
+  	height: 45px;
+  	font-size: 20pt;
+}
+
+#mc_embed_signup input#mc-embedded-subscribe {
+	font-size: 10pt;
+  	color: #000;
+  	height: 70px;
+}
+
+#mc_embed_signup > form .phonepart {
+	width: 65px;
+  	padding: 8px;
+  	text-align: center;
+}
+
+#mc_embed_signup > form .phonedetail2 .phonepart {
+	width: 85px;
+}
+
+.phonefield {
+	font-size: 17pt;
+}
+
+#contact_form input, #contact_form textarea {
+	background-color: transparent;
+  	font-size: 10pt;
+  	padding: 8px;
+}
+
+#contact_form input:last-child {
+  	width: 100%;
+}
+
+#contact_form {
+	color: #fff;
+}
+
+#contact_email {
+	color: #fff;
+}
+
+.submit {
+	background: -webkit-linear-gradient(-243deg, #ff0001 0%, #630000 100%);
+  	background: linear-gradient(-243deg, #ff0001 0%, #630000 100%);
+  	color: #fff;
+  	border-radius: 0 4px 4px 0;
+    border-left-width: 0;
+  	border: 1px solid #ccc;
+  	padding: 8px 6px;
+  	font-size: 10pt;
+  	box-sizing: border-box;
+  	text-transform: uppercase;
+  	letter-spacing: 1px;
+  	line-height: 1.25;
+  	font-family: 'Montserrat', sans-serif;
+}
+
+.submit:hover {
+	color: #eee;
+}
+
+.copy-right {
+ 	color: #ffffff; 
+  	border-top: 1px solid #dddddd;
+  	font-size: 9pt;
+  	text-align: center;
+  	margin-top: 15px;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+}
+
+.custom-action {
+ 	background: -webkit-radial-gradient(ellipse, #ffbf00 0%, #d5a000 100%);
+  	background: radial-gradient(ellipse, #ffbf00 0%, #d5a000 100%);
+  	padding: 15px 25px;
+  	border-radius: 4px;
+  	color: #000000;
+  	border: 3px solid transparent;
+  	text-transform: uppercase;
+  	box-sizing: border-box;
+}
+
+.custom-action:hover {
+ 	color: #111111;
+  	border: 3px solid #0000ff;
+}
+
+/* for mobile */
+#myCarousel .custom-action {
+	padding: 10px 15px;
+  	font-size: 8pt;
+}
+
+.cta-nav {
+ background:#ffbf00;
+}
+
+li.cta-nav a{
+ color:#00008c; 
+}
+
+li.cta-nav a:hover {
+  color:#000;
+}
+
+.add-cart {
+  	background: -webkit-radial-gradient(ellipse, #ffbf00 50%, #d5a000 100%);
+  	background: radial-gradient(ellipse, #ffbf00 50%, #d5a000 100%);
+  	padding: 10px 0px;
+  	border-radius: 2px;
+  	color: #000;
+  	text-transform: uppercase;
+}
+
+.add-cart:hover {
+  	color: #ffffff;
+}
+
+.carousel-inner>.item>img {
+ 	max-width: inherit;
+  	height: 138px;
+}
+
+.left-select-box {
+ 	padding-bottom: 15px; 
+}
+
+.grid-view-item__title {
+  	height: 75px;
+ 	overflow: hidden;
+  	display: -webkit-box;
+  	-webkit-line-clamp: 4;
+  	-webkit-box-orient: vertical;
+}
+
+.cart__qty {
+	padding: 0;
+}
+
+.cart__qty-input {
+	background: transparent;
+}
+
+.cart__update {
+	padding: 7px 5px;
+}
+
+.cart__remove {
+	padding: 7px 5px;
+}
+
+.no-variants {
+	width: 194px;
+  	height: 57px;
+}
+
+s.product-price__price {
+	font-style: italic;
+  	font-size: 12pt;
+}
+
+.product-price__price {
+	font-size: 23pt;
+}
+
+.grid-view-item__meta {
+	height: 65px;
+}
+
+#SearchInput {
+  	border-radius: 4px !important;
+  	height: 20px;
+  	display: none;
+}
+
+.search-icon {
+	padding: 3px 5px;
+  	color: #ffffff;
+  	font-size: 13px;
+  	float: none;
+}
+
+#product-select {
+	margin-bottom: 15px;
+}
+
+.added-spacing {
+ 	padding: 15px 0; 
+}
+
+.link-color a {
+  	color: #ffffff;
+ 	text-decoration: none;
+}
+
+.link-color a:hover {
+  	color: #dddddd;
+ 	text-decoration: none;
+}
+
+.link-color {
+  	color: #ffffff;
+  	padding-bottom: 15px;
+}
+
+.link-color:hover {
+  	color: #dddddd;
+ 	text-decoration: none;
+}
+
+.text-color {
+ 	 color: #ffffff;
+}
+
+.pagination>li>a, .pagination>li>span {
+	background-color: transparent;
+}
+
+ul li.pagination__text span:hover, ul li.pagination__text span:focus {
+	background-color: transparent;
+}
+
+.return-link {
+	background: transparent;
+  	color: #e2aa00;
+}
+
+.return-link:hover, .return-link:active, .return-link:focus {
+  	color: #be9e3c;
+}
+
+.height-280 > div {
+	height: 280px;
+}
+
+.height-280 > div:nth-child(2) {
+	border-left: none;
+  	border-right: none;
+}
+
+.list-view-item__title {
+	color: #e2aa00;
+}
+
+@media all and (min-width: 768px) {
+	.carousel-inner>.item>img {
+     	height: 370px;
+    }
+  	#myCarousel .custom-action {
+		display: initial;
+      	font-size: 12px;
+      	margin-left: -300px;
+        top: -100px;
+      	position: relative;
+	}
+    .search-icon {
+		float: right;
+    }
+  	.height-280 > div:nth-child(2) {
+		border-left: 2px solid #ffffff;
+  		border-right: 2px solid #ffffff;
+	}
+  	.header-logo {
+		max-width: 50%;
+	}
+  	#motto {
+		font-size: 20pt;
+      	margin-top: 10px;
+	}
+	#mc_embed_signup input#mc-embedded-subscribe {
+		font-size: 18pt;
+    }
+  	#contact_form input, #contact_form textarea {
+		font-size: 17pt;
+    }
+}
+
+@media all and (min-width: 992px) {
+ 	.copy-right {
+  		text-align: left;
+	}
+  	.carousel-inner>.item>img {
+     	height: inherit;
+    }
+  	#myCarousel .custom-action {
+		display: initial;
+      	font-size: inherit;
+      	margin-left: 0;
+        top: inherit;
+      	position: inherit;
+	}
+  	
+}
